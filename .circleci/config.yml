@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   number_one:
     docker:
-      - image: circleci/ubuntu:latest
+      - image: cimg/base:stable
 
     steps:
       - checkout
