@@ -10,6 +10,9 @@ jobs:
       - run:
           name: "list"
           command: ls
+      - run:
+          name: "pwd"
+          command: pwd
 
 workflows:
   workflow_test:
