@@ -3,14 +3,19 @@ version: 2.1
 jobs:
   number_one:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/base:2021.04
 
     steps:
       - checkout
-      - run: ls
-      - run: pwd
+      - run:
+          name: "list"
+          command: ls
 
 workflows:
   workflow_test:
     jobs:
       - number_one
+          filters:
+            branches:
+              only:
+               - master
