@@ -15,7 +15,3 @@ workflows:
   workflow_test:
     jobs:
       - number_one
-          filters:
-            branches:
-              only:
-               - master
